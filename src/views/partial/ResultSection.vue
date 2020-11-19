@@ -1,5 +1,6 @@
 <template>
   <div class="gamer left">
+    <h2>정답 입력</h2>
     <input
       v-model="result"
       type="text"
@@ -33,6 +34,7 @@ export default {
         return;
       }
       this.$emit('check-result', parseInt(this.result, 10));
+      this.result = '';
     },
   },
 };

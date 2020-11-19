@@ -1,7 +1,10 @@
 <template>
   <div class="computer right">
     <h2>덤벼라 휴먼</h2>
-    <p>{{ result }}</p>
+    <img
+      src="@/assets/robot.jpg"
+      alt=""
+    >
   </div>
 </template>
 
