@@ -6,16 +6,20 @@
         <info-box />
         <br>
         <button
-
           @click="startGame"
         >
-          시작하기 ->
+          시작하기 →
         </button>
       </div>
       <div v-if="startBtn">
         <result-section @check-result="compareResult" />
         <game-set @setting-number="settingNumber" />
         <score-board :score="score" />
+        <button
+          @click="startGame"
+        >
+          ← 설명보기
+        </button>
       </div>
     </div>
   </div>
@@ -110,8 +114,8 @@ export default {
       this.result = val;
     },
     startGame() {
-      this.startBtn = true;
-      this.info = false;
+      this.startBtn = !this.startBtn;
+      this.info = !this.info;
     },
   },
 };
