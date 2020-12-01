@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-npm install
+npm install 드루와
 ```
 
 ### Compiles and hot-reloads for development
