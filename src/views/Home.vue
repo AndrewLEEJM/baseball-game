@@ -133,14 +133,13 @@ export default {
   float: right;
 }
 .right img{
-  width: 70%;
+  width: 15em;
 }
 .left{
   float: left;
 }
 .score{
     border: 4px solid black;
-    width: 50%;
     min-height: 301px;
     clear: both;
     margin: 0 auto;
@@ -149,7 +148,6 @@ export default {
 }
 .main-container{
   clear: both;
-  width: 60%;
   margin: 0 auto;
 }
 .gamer input{
